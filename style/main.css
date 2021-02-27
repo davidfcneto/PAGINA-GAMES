@@ -1,0 +1,131 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+/* essa função traz um catálogo de cores para você aplicar, para utiliza-la basta inserir var(-- e a cor que você renomeou)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* O simbolo "*" é utilizado para aplicar edições globais à página*/
+
+
+/* ---------Elementos base------------*/
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    margin-top: 20px;
+    display: flex; /* o item display serve para organizar os ítens  em linha por exemplo(colocar mais info aqui)*/
+    flex-direction: row; /* o item flex-direction serve para indicar a direção do formato display*/
+    align-items: center; /*alinha os itens na vertical*/
+    justify-content: space-between ; /*alinha os itens na horizontal*/
+    line-height: 1.5;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none; /* "tex-decoration" serve para colocar sublinhado, linha acima do texto ou no meio*/
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*a função hover serve para aplicar filtros ao passar o mouse sobre o item, no caso abaixo mudamoso a cor do texto*/
+    color: rgb(231, 13, 13);
+}
+
+
+/*--------filme principal------------*/
+.game-principal{
+    margin-top: 20px;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/img1.jpg);
+
+    height: 400px;
+    background-size: cover; /*Limita a imagem ao tamanho da DIV*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.game-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.game-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all; /*faz uma transição com o botao hover*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.game-principal .container {
+    width: 70%;
+    line-height: 1.5;
+}
+
+.box-game{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
+.titulo2{
+    color: black;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    width: 85%;
+
+}
+
+.descricao2{
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 85%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
